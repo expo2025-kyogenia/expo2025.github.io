@@ -1,0 +1,193 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+
+/* PC表示（横幅：1025px以上）の時 */
+ @media screen and (min-width: 768px) {
+ 
+.box {
+  background-image: linear-gradient(0deg, transparent calc(100% - 1px), #C8DCEF calc(100% - 1px)),
+                    linear-gradient(90deg, transparent calc(100% - 1px), #C8DCEF calc(100% - 1px));
+  background-size: 16px 16px;
+  background-repeat: repeat;
+  background-position: center center;
+  padding: 20px;
+}
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 320;
+    color: #1649A7;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.75;
+    background-color: rgba(239, 241, 241, 1);
+
+}
+
+.gazo .img {
+    width: 80vh;
+    height: auto;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.tool section {
+    margin-top: 0px;
+}
+
+.tool h3 {
+    display: inline-block;
+    font-weight: 550;
+    font-size: 25px;
+}
+
+.tool ul {
+    list-style: disc;
+    padding-left: 3em;
+    margin-top: -10px 10px;
+}
+
+.title h1 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: -50px;
+}
+.title h5 {
+    font-size: 30px;
+    font-weight: 250;
+}
+
+.process h3 {
+    margin-top: 30px;
+    font-weight: 550;
+    font-size: 25px;
+}
+
+.process ol {
+    counter-reset: li;
+    list-style: none;
+}
+
+ol > li::before {
+    margin-left: 1.8em;
+    margin-right: 0.25em;
+    content: counter(li) ".";
+    counter-increment: li;
+    font-weight: bold;
+}
+.bold {
+    font-weight: bold;
+}
+
+ }
+
+
+
+
+ /* スマートフォン表示（横幅：767px以下）の時 */
+ @media screen and (max-width: 767px) {
+    .box {
+  background-image: linear-gradient(0deg, transparent calc(100% - 1px), #C8DCEF calc(100% - 1px)),
+                    linear-gradient(90deg, transparent calc(100% - 1px), #C8DCEF calc(100% - 1px));
+  background-size: 16px 16px;
+  background-repeat: repeat;
+  background-position: center center;
+  padding: 20px;
+}
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 320;
+    color: #1649A7;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.75;
+    background-color: rgba(239, 241, 241, 1);
+
+}
+
+
+.gazo {
+  position: relative;
+  }
+
+.gazo h1 {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  /*文字の装飾は省略*/
+  }
+
+
+
+.gazo img {
+  width: 100%;
+  }
+
+
+  h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.tool section {
+    margin-top: 0px;
+}
+
+.tool h3 {
+    display: inline-block;
+    font-weight: 550;
+    font-size: 25px;
+}
+
+.tool ul {
+    list-style: disc;
+    padding-left: 3em;
+    margin-top: -10px 10px;
+}
+
+.title h1 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: -50px;
+}
+.title h5 {
+    font-size: 30px;
+    font-weight: 250;
+}
+
+.process h3 {
+    margin-top: 30px;
+    font-weight: 550;
+    font-size: 25px;
+}
+
+.process ol {
+    counter-reset: li;
+    list-style: none;
+}
+
+ol > li::before {
+    margin-left: 1.8em;
+    margin-right: 0.25em;
+    content: counter(li) ".";
+    counter-increment: li;
+    font-weight: bold;
+}
+.bold {
+    font-weight: bold;
+}
+
+ }
