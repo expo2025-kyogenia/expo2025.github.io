@@ -46,6 +46,12 @@ h1 {
     font-size: 25px;
 }
 
+.tool h5 {
+    font-size: 12px;
+    font-weight: 250;
+    margin-top: -10px;
+}
+  
 .tool ul {
     list-style: disc;
     padding-left: 3em;
