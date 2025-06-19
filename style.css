@@ -163,12 +163,17 @@ body {
   transform: translate(-50%,-50%);
   margin:0;
   padding:0;
+  text-align: center;
  white-space: nowrap;
+ line-height: 1;
   /*文字の装飾は省略*/
   font-weight: 530;
-  font-size: 30px;
+  font-size: 25px;
   }
 
+.gazo span {
+    font-size: 16px;
+}
 
 
 .gazo img {
@@ -202,20 +207,37 @@ a.btn_03 {
 	background-size: 16px;
 	background-repeat: no-repeat;
 	background-position: 100px;
+    
 }
 a.btn_03:hover {
 	color: #fff;
 	background: #0068B7;
 }
 
+.explain h4 {
+    font-size: 20px;
+    color: #222426;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+.explain h6 {
+    font-size: 14px;
+    color: #222426;
+    margin-left: 1.2em;
+    margin-right: 1em;
+    margin-top: -1em;
+    line-height: 2;
+}
 
 .tool section {
     margin-top: 0px;
 }
 
 .bg img {
-    padding-left: 2em;
-    width: 100px;
+    padding-left: 1.8em;
+    padding-top: 0.3em;
+    width: 80px;
+
 }
 
 .bg h3 {
@@ -288,4 +310,3 @@ ol > li::before {
 .bold {
     font-weight: bold;
 }
-
