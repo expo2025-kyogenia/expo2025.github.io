@@ -213,6 +213,11 @@ a.btn_03:hover {
     margin-top: 0px;
 }
 
+.bg img {
+    padding-left: 12%;
+    width: 130px;
+}
+
 .bg h3 {
     font-weight: 430;
     font-size: 23px;
