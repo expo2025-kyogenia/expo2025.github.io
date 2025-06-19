@@ -96,15 +96,17 @@ ol > li::before {
 
 
 
+
+
+
+
+
+
+
  /* スマートフォン表示（横幅：767px以下）の時 */
  @media screen and (max-width: 767px) {
     .box {
-  background-image: linear-gradient(0deg, transparent calc(100% - 1px), #C8DCEF calc(100% - 1px)),
-                    linear-gradient(90deg, transparent calc(100% - 1px), #C8DCEF calc(100% - 1px));
-  background-size: 16px 16px;
-  background-repeat: repeat;
-  background-position: center center;
-  padding: 20px;
+  
 }
 
 body {
@@ -119,6 +121,18 @@ body {
 
 }
 
+.title {
+    margin-bottom: 40px;
+    margin-top: -10px;
+}
+.title span {
+    color: #E60012;
+}
+.kaisou {
+
+    background-color: #D2D7DA;
+    padding: 0.6em;
+}
 
 .gazo {
   position: relative;
@@ -150,16 +164,44 @@ body {
     font-weight: 700;
 }
 
+a.btn_03 {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+    white-space: nowrap;
+	width: 160px;
+	margin-left: auto;
+    margin-right: 20px;
+	padding: 0.5em;
+	font-weight: bold;
+	border: 1px solid #0068B7;
+	color: #0068B7;
+	border-radius: 100vh;
+	transition: 0.5s;
+    font-weight: 500;
+    
+}
+a.btn_03:hover {
+	color: #fff;
+	background: #0068B7;
+}
+
+
 .tool section {
     margin-top: 0px;
 }
 
-.tool h3 {
-    display: inline-block;
+.bg h3 {
     font-weight: 550;
     font-size: 25px;
+    color: black;
+    line-height: 0.8;
+    padding-left: 30%;
 }
+.bg span {
+    font-size: 12px;
 
+}
 .tool ul {
     list-style: disc;
     padding-left: 3em;
@@ -171,10 +213,23 @@ body {
     font-weight: 500;
     margin-bottom: -50px;
 }
+
 .title h5 {
     font-size: 30px;
     font-weight: 250;
 }
+.kaisou h6 {
+    color: rgb(108, 108, 108);
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.home {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
 
 .process h3 {
     margin-top: 30px;
@@ -198,4 +253,3 @@ ol > li::before {
     font-weight: bold;
 }
 
- }
