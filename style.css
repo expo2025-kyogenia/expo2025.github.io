@@ -130,8 +130,8 @@ body {
 }
 
 .title {
-    margin-bottom: 40px;
-    margin-top: -10px;
+    margin-bottom: 43px;
+    margin-top: -5px;
 }
 .title span {
     color: #E60012;
@@ -139,7 +139,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 40px;
+    font-size: 25px;
 
 }
 .kaisou {
@@ -262,7 +262,7 @@ a.btn_03:hover {
 }
 
 .title h1 {
-    font-size: 38px;
+    font-size: 25px;
     font-weight: 405;
     margin-bottom: -43px;
     margin-top: 5px;
@@ -310,4 +310,3 @@ ol > li::before {
 .bold {
     font-weight: bold;
 }
-
