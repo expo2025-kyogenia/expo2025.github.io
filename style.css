@@ -221,7 +221,7 @@ body {
   bottom: 100%;
   left: 0%; /* メニューを画面の外に飛ばす */
   z-index: 99;
-  background: linear-gradient(rgba(0,104,183,0.95), rgba(97,229,211,0.95));
+  background: linear-gradient(rgba(0,104,183,1), rgba(97,229,211,1));
   transition: .5s;
   text-align: center;
   padding-top: 20px;
@@ -240,7 +240,16 @@ body {
   text-decoration: none;
   font-weight: 500;
 }
-	 
+
+.nav_explain {
+  color: #fff;
+  font-weight: 400;
+  font-size: 8px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
 /* アイコンがクリックされたらメニューを表示 */
 #drawer_input:checked ~ .nav_content {
   bottom: 0;/* メニューを画面に入れる */
@@ -337,6 +346,7 @@ a.btn_03:hover {
     margin-left: 1em;
     margin-top: 1em;
     font-weight: 500;
+    
 }
 .explain h6 {
     font-size: 16px;
