@@ -221,7 +221,7 @@ body {
   bottom: 100%;
   left: 0%; /* メニューを画面の外に飛ばす */
   z-index: 99;
-  background: #0068B7;
+  background: linear-gradient(rgba(0,104,183,0.95), rgba(97,229,211,0.95));
   transition: .5s;
   text-align: center;
   padding-top: 20px;
