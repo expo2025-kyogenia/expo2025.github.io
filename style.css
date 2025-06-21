@@ -231,14 +231,16 @@ body {
 
 /* メニュー黒ポチを消す */
 .nav_list li {
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 
 .nav_item a {
   color: #fff;
   text-decoration: none;
+  font-weight: 500;
 }
-
+	 
 /* アイコンがクリックされたらメニューを表示 */
 #drawer_input:checked ~ .nav_content {
   bottom: 0;/* メニューを画面に入れる */
