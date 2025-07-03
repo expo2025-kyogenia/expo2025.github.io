@@ -5,121 +5,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&family=Noto+Sans+Linear+A&family=Shippori+Mincho:wght@400;500;600;700;800&family=WDXL+Lubrifont+JP+N&display=swap');
 
 
 /* PC表示（横幅：1025px以上）の時 */
- @media screen and (min-width: 768px) {
+ @media screen  {
  
-.box {
-  background-image: linear-gradient(0deg, transparent calc(100% - 1px), #C8DCEF calc(100% - 1px)),
-                    linear-gradient(90deg, transparent calc(100% - 1px), #C8DCEF calc(100% - 1px));
-  background-size: 16px 16px;
-  background-repeat: repeat;
-  background-position: center center;
-  padding: 20px;
-}
-
 body {
-    font-family: "Zen Kaku Gothic New", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 320;
-    color: #1649A7;
-    font-style: normal;
-    font-size: 15px;
-    line-height: 1.75;
-    background-color: rgba(239, 241, 241, 1);
-
-}
-
-.gazo .img {
-    width: 80vh;
-    height: auto;
-}
-
-h1 {
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.tool section {
-    margin-top: 0px;
-}
-
-.tool h3 {
-    display: inline-block;
-    font-weight: 550;
-    font-size: 25px;
-    margin-bottom: -20px;
-}
-
-.tool h5 {
-    font-size: 12px;
-    font-weight: 250;
-    margin-top: -30px;
-}
-  
-.tool ul {
-    list-style: disc;
-    padding-left: 3em;
-    margin-top: -10px 10px;
-}
-
-.title h1 {
-    font-size: 50px;
-    font-weight: 500;
-    margin-bottom: -50px;
-    font-family: "Noto Sans JP", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-}
-.title h5 {
-    font-size: 30px;
-    font-weight: 250;
-}
-
-.process h3 {
-    margin-top: 30px;
-    font-weight: 550;
-    font-size: 25px;
-}
-
-.process ol {
-    counter-reset: li;
-    list-style: none;
-}
-
-ol > li::before {
-    margin-left: 1.8em;
-    margin-right: 0.25em;
-    content: counter(li) ".";
-    counter-increment: li;
-    font-weight: bold;
-}
-.bold {
-    font-weight: bold;
-}
-
- }
-
-
-
-
-
-
-
-
-
-
-
- /* スマートフォン表示（横幅：767px以下）の時 */
- @media screen and (max-width: 767px) {
-    .box {
-  
-}
-
-body {
-    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-family: "Noto Sans Linear A", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     color: #1649A7;
@@ -127,6 +21,7 @@ body {
     font-size: 15px;
     line-height: 1.75;
     background-color: rgb(255, 255, 255);
+    
 
 }
 
@@ -136,16 +31,23 @@ body {
   justify-content: left;
   align-items: left;
   position: fixed;
-  margin: auto -60px;
+  margin: auto ;
   margin-top: -50px;
-  top: 50px;
+  top: 20px;
+  z-index: 100;
+  width: 100vw;
+  
 }
 
 .header {
-    background-color: white;
-    width: 120vw;
+    background-color: #61E5D3;
+    width: 100vw;
+    
    
 }
+
+
+
 
 /* ここから下がハンバーガーメニューに関するCSS */
   
@@ -161,8 +63,8 @@ body {
   justify-content: center;
   align-items: center;
   position: fixed;
-  right: 25px;
-  top: 25px;
+  right: 40px;
+  top: 54.5px;
   z-index: 100;/* 重なり順を一番上にする */
   cursor: pointer;
 }
@@ -174,7 +76,7 @@ body {
 .drawer_open span:after {
   content: '';
   display: block;
-  height: 1px;
+  height: 2.5px;
   width: 25px;
   background: #333;
   transition: 0.5s;
@@ -183,12 +85,12 @@ body {
 
 /* 三本線の一番上の棒の位置調整 */
 .drawer_open span:before {
-  bottom: 8px;
+  bottom: 9px;
 }
 
 /* 三本線の一番下の棒の位置調整 */
 .drawer_open span:after {
-  top: 8px;
+  top: 9px;
 }
 
 /* アイコンがクリックされたら真ん中の線を透明にする */
@@ -218,10 +120,10 @@ body {
   width: 100%;
   height: 100%;
   position: fixed;
-  bottom: 100%;
-  left: 0%; /* メニューを画面の外に飛ばす */
+  top: 0%;
+  left: 100%; /* メニューを画面の外に飛ばす */
   z-index: 99;
-  background: linear-gradient(rgba(0,104,183,1), rgba(97,229,211,1));
+  background: #521B00;
   transition: .5s;
   text-align: center;
   padding-top: 20px;
@@ -231,37 +133,69 @@ body {
 
 /* メニュー黒ポチを消す */
 .nav_list li {
-  margin-top: 20px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
 }
 
 .nav_item a {
   color: #fff;
   text-decoration: none;
-  font-weight: 500;
-  
-}
-
-.nav_explain {
-  color: #fff;
-  font-weight: 400;
-  font-size: 8px;
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
 }
 
 /* アイコンがクリックされたらメニューを表示 */
 #drawer_input:checked ~ .nav_content {
-  bottom: 0;/* メニューを画面に入れる */
+  left: 0;/* メニューを画面に入れる */
   
 }
 
+a.btn_lan {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+    white-space: nowrap;
+	width: 97px;
+  margin-left: 20px;
+  margin-top: 3px;
+  margin-bottom: 16px;
+	padding: 0.1em;
+	font-weight: bold;
+	border: 1px solid #521B00;
+	color: #521B00;
+	border-radius: 100vh;
+	transition: 0.5s;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    padding-right: 20px;
+}
+a.btn_lan:hover {
+	color: #521B00;
+	background: #fff;
+}
 
+.title h1 {
+    font-family: "Noto Sans Linear A", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #521B00;
+    font-style: normal;
+    font-size: 30px;
+    z-index: 101;
+    margin-left: 20px;
+    -webkit-text-stroke: 1.5px #521B00;
+    margin-top: 12px;
+    margin-bottom: -18px;
+}
+.title span {
+    font-family: "Noto Sans Linear A", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #521B00;
+    font-style: normal;
+    font-size: 8px;
+    z-index: 101;
+    margin-left: 55px;
 
-.title {
-    margin-bottom: 2px;
-    margin-top: 2px;
+    -webkit-text-stroke: 0px #521B00;
 }
 
 
@@ -275,30 +209,32 @@ body {
 .gazo {
   position: relative;
   z-index: 0;
+  top: 110px;
+  
   }
 
 .gazo h1 {
   position: absolute;
+  font-family: "WDXL Lubrifont JP N", sans-serif;
+  text-shadow: rgba(0, 0, 0, 1) 1px 0 10px;
   color: white;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  text-shadow: rgba(0,0,0,0.5) 1px 0 10px;
+  top: 100px;
+  left: 20px;
   margin:0;
   padding:0;
-  text-align: center;
+  text-align: left;
  white-space: nowrap;
  line-height: 1;
   /*文字の装飾は省略*/
   font-weight: 530;
-  font-size: 25px;
+  font-size: 40px;
+
   }
 
 .gazo span {
-    font-size: 16px;
+    font-size: 23px;
     font-weight: 530;
+    right: 20px;
 }
 
 
@@ -306,6 +242,7 @@ body {
   width: 100%;
   position: relative;
   z-index: 0;
+  
   }
 
 
@@ -314,48 +251,160 @@ body {
     font-weight: 700;
 }
 
-a.btn_03 {
-	display: block;
-	text-align: center;
-	text-decoration: none;
-    white-space: nowrap;
-	width: 135px;
-	margin-left: auto;
-    margin-right: 20px;
-	padding: 0.7em;
-	font-weight: bold;
-	border: 1px solid #0068B7;
-	color: #0068B7;
-	border-radius: 100vh;
-	transition: 0.5s;
-    font-weight: 500;
-    font-size: 14px;
-    padding-right: 20px;
-	background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20class%3D%22feather%20feather-external-link%22%3E%3Cpath%20d%3D%22M18%2013v6a2%202%200%200%201-2%202H5a2%202%200%200%201-2-2V8a2%202%200%200%201%202-2h6%22%3E%3C%2Fpath%3E%3Cpolyline%20points%3D%2215%203%2021%203%2021%209%22%3E%3C%2Fpolyline%3E%3Cline%20x1%3D%2210%22%20y1%3D%2214%22%20x2%3D%2221%22%20y2%3D%223%22%3E%3C%2Fline%3E%3C%2Fsvg%3E');
-	background-size: 16px;
-	background-repeat: no-repeat;
-	background-position: 100px;
-    
+.slider {
+	width: 100vw;
+	height: 141vw;
+	overflow: hidden;
+	position: relative;
+	max-width: 100%;
 }
-a.btn_03:hover {
-	color: #fff;
-	background: #0068B7;
+
+.slider div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 10;
+	opacity: 0;
+	animation-name: slide-fade;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes slide-fade {
+	0%{
+		opacity: 0;
+	}
+	10%{
+		opacity: 1;
+	}
+	
+  50%{
+    opacity: 1;
+  }
+	90%{
+		opacity: 1;
+	}
+  100%{
+    opacity: 0;
+  }
+}
+.slider div:first-of-type{
+	background-image: url(../IMG_1479.JPG);
+}
+.slider div:nth-of-type(2){
+	background-image: url(../IMG_1480.JPG);
+	animation-delay: 3s;
+}
+.slider div:nth-of-type(3){
+	background-image: url(../IMG_1479.JPG);
+	animation-delay: 12s;
+}
+
+
+
+
+}
+
+@keyframes infinity-scroll-left {
+from {
+  transform: translateX(0);
+}
+  to {
+  transform: translateX(-100%);
+}
+}
+.scroll-infinity__wrap {
+  display: flex;
+  overflow: hidden;
+}
+.scroll-infinity__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  
+  
+}
+.scroll-infinity__list--left {
+  animation: infinity-scroll-left 50s 
+  infinite linear 0.5s both;
+}
+.scroll-infinity__item {
+  width: calc(100vw / 2);
+}
+.scroll-infinity__item>img {
+  width: 100%;
+}
+
+.scroll-infinity__wrap {
+  position: relative;
+  top: 10px;
+}
+
+.explain {
+  position: relative;
+  top: 88px;
+}
+
+.explain2 {
+  position: relative;
+  top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+.haikei {
+  background-color: #dddddd;
+  position: relative;
+  top: 10px;
+  height: 78px;
+}
+.explain h5 {
+    font-size: 16px;
+    color: #521B00;
+    margin-left: 25px;
+    font-family: "WDXL Lubrifont JP N", sans-serif;
+    margin-right: 1em;
+    margin-top: -1em;
+    line-height: 2;
+    font-weight: 500;
+}
+.explain h3 {
+    font-size: 20px;
+    color: #521B00;
+    font-family: "Boto Sans Japanese", sans-serif;
+    margin-right: 20%;
+    margin-top: -1.5em;
+    text-align: right;
+    line-height: 2;
+    font-weight: 600;
+}
+.explain2 span {
+  font-family: "WDXL Lubrifont JP N", sans-serif;
+  font-size: 28px;
 }
 
 .explain h4 {
     font-size: 23px;
     color: #222426;
     margin-left: 1em;
-    margin-top: 1em;
-    font-weight: 500;
-    
+    margin-top: 2em;
+    font-weight: 400;
+    font-family: "Noto Sans Linear A", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 .explain h6 {
     font-size: 16px;
     color: #222426;
     margin-left: 1.2em;
-    margin-right: 1.2em;
-    margin-top: -0.9em;
+    margin-right: 1em;
+    margin-top: -1em;
     line-height: 2;
     font-weight: 500;
 }
@@ -382,7 +431,7 @@ a.btn_03:hover {
     font-size: 12px;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
 
 }
@@ -411,30 +460,149 @@ a.btn_03:hover {
 }
 
 
-.process h3 {
-    margin-top: 30px;
-    font-weight: 550;
-    font-size: 25px;
+
+.aisatu {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.process ol {
-    counter-reset: li;
-    list-style: none;
+.aisatu h4 {
+  font-family: "WDXL Lubrifont JP N", sans-serif;
+  font-size: 28px;
+  position: relative;
+  top: 0px;
+  z-index: 2;
 }
 
-ol > li::before {
-    margin-left: 1.8em;
-    margin-right: 0.25em;
-    content: counter(li) ".";
-    counter-increment: li;
-    font-weight: bold;
+.aisatu h6 {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 0px;
+  position: relative;
+  top: 30px;
+  z-index: 2;
 }
-.bold {
-    font-weight: bold;
+
+.gaiyou {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gaiyou h4 {
+  font-family: "WDXL Lubrifont JP N", sans-serif;
+  font-size: 28px;
+  position: relative;
+  top: 50px;
+  z-index: 2;
+}
+
+.gaiyou h6 {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 0px;
+  position: relative;
+  top: -200px;
+  z-index: 2;
+}
+.gaiyou img {
+  position: relative;
+  top: -60px;
+  z-index: 1;
+}
+.chizu img {
+  width: 90vw;
+  position: relative;
+  top: 0px;
+}
+
+.nihon {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nihon h4 {
+  font-family: "WDXL Lubrifont JP N", sans-serif;
+  font-size: 28px;
+  position: relative;
+  top: 0px;
+}
+.nihon h6 {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 0px;
+  position: relative;
+  top: 0px;
+  
+}
+.nihon span {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  padding-left: 0px;
+  position: relative;
+  top: 0px;
+  
+}
+.nihon img {
+  width: 90vw;
+}
+
+
+.history {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.history h4 {
+  font-family: "WDXL Lubrifont JP N", sans-serif;
+  font-size: 28px;
+  position: relative;
+  top: -150px;
+}
+.history h6 {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 0px;
+  position: relative;
+  top: -130px;
+  
+}
+
+.sakuhin {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sakuhin h4 {
+  font-family: "WDXL Lubrifont JP N", sans-serif;
+  font-size: 28px;
+  position: relative;
+  top: -40px;
+}
+.sakuhin h6 {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 0px;
+  position: relative;
+  top: -25px;
+  
+}
+.sakuhin span {
+  color: #00bba2;
 }
 
 .netabare  {
-  background: #0068B7;
+  background: #00bba2;
   
 }
 
@@ -446,10 +614,457 @@ ol > li::before {
 
 .netabare h6 {
   font-size: 10px;
-  color: #dbdde0;
+  color: #ffffff;
   text-align: right;
   margin-right: 20px;
   
   font-weight: 500;
   line-height: 1.5;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* スマートフォン表示（横幅：767px以下）の時 */
+ @media screen and (max-width: 767px) {
+    .box {
+  
+
+
+body {
+    font-family: "Noto Sans Linear A", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #1649A7;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.75;
+    background-color: rgb(255, 255, 255);
+    
+
+}
+
+/* CSSコード */
+.header {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  position: fixed;
+  margin: auto ;
+  margin-top: -50px;
+  top: 20px;
+  z-index: 100;
+  width: 100vw;
+  
+}
+
+.header {
+    background-color: #61E5D3;
+    width: 100vw;
+    
+   
+}
+
+
+
+
+/* ここから下がハンバーガーメニューに関するCSS */
+  
+
+/* チェックボックスを非表示にする */
+.drawer_hidden {
+  display: none;
+}
+
+/* ハンバーガーアイコンの設置スペース */
+.drawer_open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 40px;
+  top: 54.5px;
+  z-index: 100;/* 重なり順を一番上にする */
+  cursor: pointer;
+}
+
+
+/* ハンバーガーメニューのアイコン */
+.drawer_open span,
+.drawer_open span:before,
+.drawer_open span:after {
+  content: '';
+  display: block;
+  height: 2.5px;
+  width: 25px;
+  background: #333;
+  transition: 0.5s;
+  position: absolute;
+}
+
+/* 三本線の一番上の棒の位置調整 */
+.drawer_open span:before {
+  bottom: 9px;
+}
+
+/* 三本線の一番下の棒の位置調整 */
+.drawer_open span:after {
+  top: 9px;
+}
+
+/* アイコンがクリックされたら真ん中の線を透明にする */
+#drawer_input:checked ~ .drawer_open span {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+#drawer_input:checked ~ .drawer_open span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+  background: #fff;
+}
+
+#drawer_input:checked ~ .drawer_open span::after {
+  top: 0;
+  transform: rotate(-45deg);
+  background: #fff;
+}
+  
+/* メニューのデザイン*/
+.nav_content {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0%;
+  left: 100%; /* メニューを画面の外に飛ばす */
+  z-index: 99;
+  background: #521B00;
+  transition: .5s;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+  
+}
+
+/* メニュー黒ポチを消す */
+.nav_list li {
+  margin-bottom: 20px;
+}
+
+.nav_item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* アイコンがクリックされたらメニューを表示 */
+#drawer_input:checked ~ .nav_content {
+  left: 0;/* メニューを画面に入れる */
+  
+}
+
+a.btn_lan {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+    white-space: nowrap;
+	width: 97px;
+  margin-left: 20px;
+  margin-top: 3px;
+  margin-bottom: 16px;
+	padding: 0.1em;
+	font-weight: bold;
+	border: 1px solid #521B00;
+	color: #521B00;
+	border-radius: 100vh;
+	transition: 0.5s;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    padding-right: 20px;
+}
+a.btn_lan:hover {
+	color: #521B00;
+	background: #fff;
+}
+
+.title h1 {
+    font-family: "Noto Sans Linear A", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #521B00;
+    font-style: normal;
+    font-size: 30px;
+    z-index: 101;
+    margin-left: 20px;
+    -webkit-text-stroke: 1.5px #521B00;
+    margin-top: 12px;
+    margin-bottom: -18px;
+}
+.title span {
+    font-family: "Noto Sans Linear A", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #521B00;
+    font-style: normal;
+    font-size: 8px;
+    z-index: 101;
+    margin-left: 55px;
+
+    -webkit-text-stroke: 0px #521B00;
+}
+
+
+.kaisou {
+    margin-top: 48px;
+    background-color: #F7F7F7;
+    padding: 1em;
+    color: #222426;
+}
+
+.gazo {
+  
+  }
+
+.gazo h1 {
+  position: absolute;
+  font-family: "WDXL Lubrifont JP N", sans-serif;
+  text-shadow: rgba(0, 0, 0, 1) 1px 0 10px;
+  color: white;
+  top: 100px;
+  left: 20px;
+  margin:0;
+  padding:0;
+  text-align: left;
+ white-space: nowrap;
+ line-height: 1;
+  /*文字の装飾は省略*/
+  font-weight: 530;
+  font-size: 40px;
+
+  }
+
+.gazo span {
+    font-size: 23px;
+    font-weight: 530;
+    right: 20px;
+}
+
+
+.gazo img {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  
+  }
+
+
+  h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+
+@keyframes infinity-scroll-left {
+from {
+  transform: translateX(0);
+}
+  to {
+  transform: translateX(-100%);
+}
+}
+.scroll-infinity__wrap {
+  display: flex;
+  overflow: hidden;
+}
+.scroll-infinity__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  
+  
+}
+.scroll-infinity__list--left {
+  animation: infinity-scroll-left 55s infinite linear 0.5s both;
+}
+.scroll-infinity__item {
+  width: calc(100vw / 2);
+}
+.scroll-infinity__item>img {
+  width: 100%;
+}
+
+.scroll-infinity__wrap {
+  position: relative;
+  top: -10px;
+}
+
+.explain {
+
+}
+
+.explain2 {
+  position: relative;
+  top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+.haikei {
+  background-color: #dddddd;
+  position: relative;
+  top: -10px;
+  height: 78px;
+}
+.explain h5 {
+    font-size: 16px;
+    color: #521B00;
+    margin-left: 25px;
+    font-family: "WDXL Lubrifont JP N", sans-serif;
+    margin-right: 1em;
+    margin-top: -1em;
+    line-height: 2;
+    font-weight: 500;
+}
+.explain h3 {
+    font-size: 20px;
+    color: #521B00;
+    font-family: "Boto Sans Japanese", sans-serif;
+    margin-right: 20%;
+    margin-top: -1.5em;
+    text-align: right;
+    line-height: 2;
+    font-weight: 600;
+}
+.explain2 span {
+  font-family: "WDXL Lubrifont JP N", sans-serif;
+  font-size: 28px;
+}
+
+.explain h4 {
+    font-size: 23px;
+    color: #222426;
+    margin-left: 1em;
+    margin-top: 2em;
+    font-weight: 400;
+    font-family: "Noto Sans Linear A", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal
+}
+.explain h6 {
+    font-size: 16px;
+    color: #222426;
+    margin-left: 1.2em;
+    margin-right: 1em;
+    margin-top: -1em;
+    line-height: 2;
+    font-weight: 500;
+}
+
+.tool section {
+    margin-top: 0px;
+}
+
+.bg img {
+    padding-left: 2em;
+    padding-top: 0.3em;
+    width: 80px;
+
+}
+
+.bg h3 {
+    font-weight: 430;
+    font-size: 23px;
+    color: #222426;
+    line-height: 0.8;
+    padding-left: 25%;
+}
+.bg span {
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+.tool ul {
+    list-style: disc;
+    padding-left: 3em;
+    margin-top: -10px 10px;
+}
+
+
+
+.title h5 {
+    font-size: 30px;
+    font-weight: 250;
+}
+.kaisou h6 {
+    color: #828487;
+    font-weight: 500;
+    font-size: 11px;
+}
+
+.home {
+  text-decoration: none;
+  color: #222426;
+  font-weight: 500;
+}
+
+.gaiyou {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gaiyou h4 {
+  font-family: "WDXL Lubrifont JP N", sans-serif;
+  font-size: 28px;
+  position: absolute;
+  top: 10px;
+}
+
+.gaiyou h6 {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 0px;
+  position: absolute;
+  top: 160px;
+  
+}
+
+.nihon h4 {
+  font-family: "WDXL Lubrifont JP N", sans-serif;
+  font-size: 28px;
+  position: absolute;
+  top: 700px;
+}
+}
+}
+
+
+
