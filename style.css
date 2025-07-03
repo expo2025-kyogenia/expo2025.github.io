@@ -1,1070 +1,160 @@
-@charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&family=Noto+Sans+Linear+A&family=Shippori+Mincho:wght@400;500;600;700;800&family=WDXL+Lubrifont+JP+N&display=swap');
+<!DOCTYPE html>
+<html lang="ja">
 
 
-/* PC表示（横幅：1025px以上）の時 */
- @media screen  {
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<title>キョゲニアパビリオン｜EXPO2025　大阪・関西万博公式風Webページ</title>
+<meta name="description" content="">
+<meta property="og:type" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<link rel="icon" href="">
+<link rel="icon" href="" type="image/svg+xml">
+<link rel="apple-touch-icon" href="">
+<link rel="canonical" href="" />
+<!-- css start -->
+<link rel="stylesheet" href="destyle.css">
+<link rel="stylesheet" href="style.css">
+<!-- css end -->
+</head>
+
+<body>
+<!-- contents start -->
+
+<div class="box">
+
+
+
+
+
+
+<div class="kaisou">
+  <h6>　<a href="https://www.expo2025.or.jp/" class="home">HOME
+  </a>　＞　<a href="https://www.expo2025.or.jp/official-participant/" class="home">
+  海外パビリオン</a>　＞　
+  <a href="" class="imano_page">
+  キョゲニアパビリオン</a>
+  </h6>
+</div>
+
+
+
+<div class="gazo">
+  <img src="IMG_2001.JPG" />
+  <h1>キョゲニアパビリオン<br>
+  <span>最古の芸術</span></h1>
+</div>
+
+<body>
+    <header class="header">
+      <!-- ヘッダーロゴ -->
+      <div class="title">
+ 　　　　 <img src="IMG_1327.jpg" height="40px">
+    
+      <!-- ハンバーガーメニュー部分 -->
+      <div class="nav">
+    
+        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+        <input id="drawer_input" class="drawer_hidden" type="checkbox">
+    
+        <!-- ハンバーガーアイコン -->
+        <label for="drawer_input" class="drawer_open"><span></span></label>
+    
+        <!-- メニュー -->
+        <nav class="nav_content">
+          <ul class="nav_list">
+            <li class="nav_item"><a href="https://www.expo2025.or.jp/">ホーム</a></li>
+            <li class="nav_item"><a href="https://www.expo2025.or.jp/officialblog/">公式ブログ</a></li>
+            <li class="nav_item"><a href="https://www.expo2025.or.jp/officialsns/">公式SNS</a></li>
+            <li class="nav_item"><a href="https://www.expovisitors.expo2025.or.jp/shops?_gl=1*16npmd0*_gcl_au*MTk3MTIzNTgyLjE3NTAyNDY1OTc.">Goods & Shops</a></li>
+            <li class="nav_item"><a href="https://www.expovisitors.expo2025.or.jp/gourmets?_gl=1*16npmd0*_gcl_au*MTk3MTIzNTgyLjE3NTAyNDY1OTc.">グルメ</a></li>
+            <li class="nav_item"><a href="https://www.expo2025.or.jp/expo-map-index/map/">会場マップ</a></li>
+            <li class="nav_item"><a href="https://www.expo2025.or.jp/universalinfo/">ユニバーサル情報</a></li>
+            <li class="nav_item"><a href="https://www.expo2025.or.jp/expo-map-index/access/">アクセス</a></li>
+            <li class="nav_item"><a href="https://tktwaitingroom.expo2025.or.jp/?c=expo2025&e=ticket0001&ver=v3-javascript-3.7.8&cver=121&man=ticket-top&l=ticket-0001&t=https%3A%2F%2Fticket.expo2025.or.jp%2Fmyticket%2F%3F_gl%3D1%2apbitlx%2a_gcl_au%2aMTk3MTIzNTgyLjE3NTAyNDY1OTc.&kupver=cloudfront-1.2.10">マイチケットログイン</a></li>
+            <li class="nav_item"><a href="https://faq.expo2025.or.jp/hc/ja?_gl=1*pbitlx*_gcl_au*MTk3MTIzNTgyLjE3NTAyNDY1OTc.">お問い合わせ</a></li>
+            <li class="nav_explain">総合基礎実技2025　第３課題「嘘をつくる」　９グループ</li>
+          </ul>
+        </nav>
+    
+      </div>
+    </header>
+</body>
+
+
+<br>
+<div class="tool">
+<section>
  
-body {
-    font-family: "Noto Sans Linear A", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    color: #1649A7;
-    font-style: normal;
-    font-size: 15px;
-    line-height: 1.75;
-    background-color: rgb(255, 255, 255);
-    
+<span class="bg">
+ <img src="IMG_1325.jpg" alt="" align="left" >
+ <h3>キョゲニア
+<br><span>Kyogenia</span></h3>
+<br>
 
+
+<a href="https://expo2025-kyogenia.github.io/Kyogenia-jpn/" class="btn_03">公式情報　</a>
+
+
+<style>
+.example{
+    border-bottom: 0.7px solid #d0d0d0;
+    padding: 20px;
 }
+</style>
+<div class="example"></div>
 
-/* CSSコード */
-.header {
-  display: flex;
-  justify-content: left;
-  align-items: left;
-  position: fixed;
-  margin: auto ;
-  margin-top: -50px;
-  top: 20px;
-  z-index: 100;
-  width: 100vw;
+<div class="explain">
+<h4>最古の芸術</h4>
+<br>
+<h6>地球上で最も古くから芸術活動を営んできた国・キョゲニアのパビリオンでは、古代から人々が紡いてきた歴史と文化を紹介します。
+  <br>美しい海と豊かな資源を持つキョゲニアは、世界でも類を見ないほど速い海流に囲まれ、それによって他国の侵略船から守られてきました。そのため古くから海洋信仰が盛んで、国旗にはそれを象徴するキョゲニア周辺の魚が描かれています。
+  <br>近代まで他国との交流がほとんど無く、独自の文化・芸術を築き上げてきたキョゲニアでは、現在も発掘調査が進められており、遺跡からは唯一無二の独特な芸術品が数多く出土しています。その歴史は古代まで遡り、最古の芸術とも呼ばれています。
+  <br>キョゲニアの文化・芸術を、どうぞお楽しみ下さい。
   
-}
+</h6>
 
-.header {
-    background-color: #61E5D3;
-    width: 100vw;
-    
-   
-}
-
-
-
-
-/* ここから下がハンバーガーメニューに関するCSS */
   
 
-/* チェックボックスを非表示にする */
-.drawer_hidden {
-  display: none;
-}
+<br><br>
+</section>
+</div>
 
-/* ハンバーガーアイコンの設置スペース */
-.drawer_open {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  right: 40px;
-  top: 54.5px;
-  z-index: 100;/* 重なり順を一番上にする */
-  cursor: pointer;
-}
-
-
-/* ハンバーガーメニューのアイコン */
-.drawer_open span,
-.drawer_open span:before,
-.drawer_open span:after {
-  content: '';
-  display: block;
-  height: 2.5px;
-  width: 25px;
-  background: #333;
-  transition: 0.5s;
-  position: absolute;
-}
-
-/* 三本線の一番上の棒の位置調整 */
-.drawer_open span:before {
-  bottom: 9px;
-}
-
-/* 三本線の一番下の棒の位置調整 */
-.drawer_open span:after {
-  top: 9px;
-}
-
-/* アイコンがクリックされたら真ん中の線を透明にする */
-#drawer_input:checked ~ .drawer_open span {
-  background: rgba(255, 255, 255, 0);
-}
-
-/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
-#drawer_input:checked ~ .drawer_open span::before {
-  bottom: 0;
-  transform: rotate(45deg);
-  background: #fff;
-}
-
-#drawer_input:checked ~ .drawer_open span::after {
-  top: 0;
-  transform: rotate(-45deg);
-  background: #fff;
-}
+<div class="netabare">
+  <br>
   
-/* メニューのデザイン*/
-.nav_content {
-    font-family: "Zen Kaku Gothic New", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0%;
-  left: 100%; /* メニューを画面の外に飛ばす */
-  z-index: 99;
-  background: #521B00;
-  transition: .5s;
-  text-align: center;
-  padding-top: 20px;
-  font-size: 20px;
-  
-}
-
-/* メニュー黒ポチを消す */
-.nav_list li {
-  margin-bottom: 20px;
-}
-
-.nav_item a {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* アイコンがクリックされたらメニューを表示 */
-#drawer_input:checked ~ .nav_content {
-  left: 0;/* メニューを画面に入れる */
-  
-}
-
-a.btn_lan {
-	display: block;
-	text-align: center;
-	text-decoration: none;
-    white-space: nowrap;
-	width: 97px;
-  margin-left: 20px;
-  margin-top: 3px;
-  margin-bottom: 16px;
-	padding: 0.1em;
-	font-weight: bold;
-	border: 1px solid #521B00;
-	color: #521B00;
-	border-radius: 100vh;
-	transition: 0.5s;
-  font-family: "Zen Kaku Gothic New", sans-serif;
-    font-weight: 500;
-    font-size: 11px;
-    padding-right: 20px;
-}
-a.btn_lan:hover {
-	color: #521B00;
-	background: #fff;
-}
-
-.title h1 {
-    font-family: "Noto Sans Linear A", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    color: #521B00;
-    font-style: normal;
-    font-size: 30px;
-    z-index: 101;
-    margin-left: 20px;
-    -webkit-text-stroke: 1.5px #521B00;
-    margin-top: 12px;
-    margin-bottom: -18px;
-}
-.title span {
-    font-family: "Noto Sans Linear A", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    color: #521B00;
-    font-style: normal;
-    font-size: 8px;
-    z-index: 101;
-    margin-left: 55px;
-
-    -webkit-text-stroke: 0px #521B00;
-}
-
-
-.kaisou {
-    margin-top: 48px;
-    background-color: #F7F7F7;
-    padding: 1em;
-    color: #222426;
-}
-
-.gazo {
-  position: relative;
-  z-index: 0;
-  top: 110px;
-  
-  }
-
-.gazo h1 {
-  position: absolute;
-  font-family: "WDXL Lubrifont JP N", sans-serif;
-  text-shadow: rgba(0, 0, 0, 1) 1px 0 10px;
-  color: white;
-  top: 100px;
-  left: 20px;
-  margin:0;
-  padding:0;
-  text-align: left;
- white-space: nowrap;
- line-height: 1;
-  /*文字の装飾は省略*/
-  font-weight: 530;
-  font-size: 40px;
-
-  }
-
-.gazo span {
-    font-size: 23px;
-    font-weight: 530;
-    right: 20px;
-}
-
-
-.gazo img {
-  width: 100%;
-  position: relative;
-  z-index: 0;
-  
-  }
-
-
-  h1 {
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.slider {
-	width: 100vw;
-	height: 141vw;
-	overflow: hidden;
-	position: relative;
-	max-width: 100%;
-}
-
-.slider div {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-position: center center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	z-index: 10;
-	opacity: 0;
-	animation-name: slide-fade;
-	animation-duration: 15s;
-	animation-iteration-count: infinite;
-}
-
-@keyframes slide-fade {
-	0%{
-		opacity: 0;
-	}
-	10%{
-		opacity: 1;
-	}
-	
-  50%{
-    opacity: 1;
-  }
-	90%{
-		opacity: 1;
-	}
-  100%{
-    opacity: 0;
-  }
-}
-.slider div:first-of-type{
-	background-image: url(../IMG_1479.JPG);
-}
-.slider div:nth-of-type(2){
-	background-image: url(../IMG_1480.JPG);
-	animation-delay: 3s;
-}
-.slider div:nth-of-type(3){
-	background-image: url(../IMG_1479.JPG);
-	animation-delay: 12s;
-}
-
-
-
-
-}
-
-@keyframes infinity-scroll-left {
-from {
-  transform: translateX(0);
-}
-  to {
-  transform: translateX(-100%);
-}
-}
-.scroll-infinity__wrap {
-  display: flex;
-  overflow: hidden;
-}
-.scroll-infinity__list {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  
-  
-}
-.scroll-infinity__list--left {
-  animation: infinity-scroll-left 50s 
-  infinite linear 0.5s both;
-}
-.scroll-infinity__item {
-  width: calc(100vw / 2);
-}
-.scroll-infinity__item>img {
-  width: 100%;
-}
-
-.scroll-infinity__wrap {
-  position: relative;
-  top: 10px;
-}
-
-.explain {
-  position: relative;
-  top: 88px;
-}
-
-.explain2 {
-  position: relative;
-  top: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  background: #ffffff;
-  border-radius: 5px;
-}
-.haikei {
-  background-color: #dddddd;
-  position: relative;
-  top: 10px;
-  height: 78px;
-}
-.explain h5 {
-    font-size: 16px;
-    color: #521B00;
-    margin-left: 25px;
-    font-family: "WDXL Lubrifont JP N", sans-serif;
-    margin-right: 1em;
-    margin-top: -1em;
-    line-height: 2;
-    font-weight: 500;
-}
-.explain h3 {
-    font-size: 20px;
-    color: #521B00;
-    font-family: "Boto Sans Japanese", sans-serif;
-    margin-right: 20%;
-    margin-top: -1.5em;
-    text-align: right;
-    line-height: 2;
-    font-weight: 600;
-}
-.explain2 span {
-  font-family: "WDXL Lubrifont JP N", sans-serif;
-  font-size: 28px;
-}
-
-.explain h4 {
-    font-size: 23px;
-    color: #222426;
-    margin-left: 1em;
-    margin-top: 2em;
-    font-weight: 400;
-    font-family: "Noto Sans Linear A", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-}
-.explain h6 {
-    font-size: 16px;
-    color: #222426;
-    margin-left: 1.2em;
-    margin-right: 1em;
-    margin-top: -1em;
-    line-height: 2;
-    font-weight: 500;
-}
-
-.tool section {
-    margin-top: 0px;
-}
-
-.bg img {
-    padding-left: 2em;
-    padding-top: 0.3em;
-    width: 80px;
-
-}
-
-.bg h3 {
-    font-weight: 430;
-    font-size: 23px;
-    color: #222426;
-    line-height: 0.8;
-    padding-left: 25%;
-}
-.bg span {
-    font-size: 12px;
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-
-}
-.tool ul {
-    list-style: disc;
-    padding-left: 3em;
-    margin-top: -10px 10px;
-}
-
-
-
-.title h5 {
-    font-size: 30px;
-    font-weight: 250;
-}
-.kaisou h6 {
-    color: #828487;
-    font-weight: 500;
-    font-size: 11px;
-}
-
-.home {
-  text-decoration: none;
-  color: #222426;
-  font-weight: 500;
-}
-
-
-
-.aisatu {
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.aisatu h4 {
-  font-family: "WDXL Lubrifont JP N", sans-serif;
-  font-size: 28px;
-  position: relative;
-  top: 0px;
-  z-index: 2;
-}
-
-.aisatu h6 {
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  padding-left: 0px;
-  position: relative;
-  top: 30px;
-  z-index: 2;
-}
-
-.gaiyou {
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.gaiyou h4 {
-  font-family: "WDXL Lubrifont JP N", sans-serif;
-  font-size: 28px;
-  position: relative;
-  top: 50px;
-  z-index: 2;
-}
-
-.gaiyou h6 {
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  padding-left: 0px;
-  position: relative;
-  top: -200px;
-  z-index: 2;
-}
-.gaiyou img {
-  position: relative;
-  top: -60px;
-  z-index: 1;
-}
-.chizu img {
-  width: 90vw;
-  position: relative;
-  top: 0px;
-}
-
-.nihon {
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.nihon h4 {
-  font-family: "WDXL Lubrifont JP N", sans-serif;
-  font-size: 28px;
-  position: relative;
-  top: 0px;
-}
-.nihon h6 {
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  padding-left: 0px;
-  position: relative;
-  top: 0px;
-  
-}
-.nihon span {
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  font-weight: 700;
-  font-size: 23px;
-  padding-left: 0px;
-  position: relative;
-  top: 0px;
-  
-}
-.nihon img {
-  width: 90vw;
-}
-
-
-.history {
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.history h4 {
-  font-family: "WDXL Lubrifont JP N", sans-serif;
-  font-size: 28px;
-  position: relative;
-  top: -150px;
-}
-.history h6 {
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  padding-left: 0px;
-  position: relative;
-  top: -130px;
-  
-}
-
-.sakuhin {
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.sakuhin h4 {
-  font-family: "WDXL Lubrifont JP N", sans-serif;
-  font-size: 28px;
-  position: relative;
-  top: -40px;
-}
-.sakuhin h6 {
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  padding-left: 0px;
-  position: relative;
-  top: -25px;
-  
-}
-.sakuhin span {
-  color: #00bba2;
-}
-
-.netabare  {
-  background: #00bba2;
-  
-}
-
-.nav_list h4 {
-  font-size: 15px;
-  line-height: 0.75;
-  margin-left: 25px;
-}
-
-.netabare h6 {
-  font-size: 10px;
-  color: #ffffff;
-  text-align: right;
-  margin-right: 20px;
-  
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /* スマートフォン表示（横幅：767px以下）の時 */
- @media screen and (max-width: 767px) {
-    .box {
-  
-
-
-body {
-    font-family: "Noto Sans Linear A", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    color: #1649A7;
-    font-style: normal;
-    font-size: 15px;
-    line-height: 1.75;
-    background-color: rgb(255, 255, 255);
-    
-
-}
-
-/* CSSコード */
-.header {
-  display: flex;
-  justify-content: left;
-  align-items: left;
-  position: fixed;
-  margin: auto ;
-  margin-top: -50px;
-  top: 20px;
-  z-index: 100;
-  width: 100vw;
-  
-}
-
-.header {
-    background-color: #61E5D3;
-    width: 100vw;
-    
-   
-}
-
-
-
-
-/* ここから下がハンバーガーメニューに関するCSS */
-  
-
-/* チェックボックスを非表示にする */
-.drawer_hidden {
-  display: none;
-}
-
-/* ハンバーガーアイコンの設置スペース */
-.drawer_open {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  right: 40px;
-  top: 54.5px;
-  z-index: 100;/* 重なり順を一番上にする */
-  cursor: pointer;
-}
-
-
-/* ハンバーガーメニューのアイコン */
-.drawer_open span,
-.drawer_open span:before,
-.drawer_open span:after {
-  content: '';
-  display: block;
-  height: 2.5px;
-  width: 25px;
-  background: #333;
-  transition: 0.5s;
-  position: absolute;
-}
-
-/* 三本線の一番上の棒の位置調整 */
-.drawer_open span:before {
-  bottom: 9px;
-}
-
-/* 三本線の一番下の棒の位置調整 */
-.drawer_open span:after {
-  top: 9px;
-}
-
-/* アイコンがクリックされたら真ん中の線を透明にする */
-#drawer_input:checked ~ .drawer_open span {
-  background: rgba(255, 255, 255, 0);
-}
-
-/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
-#drawer_input:checked ~ .drawer_open span::before {
-  bottom: 0;
-  transform: rotate(45deg);
-  background: #fff;
-}
-
-#drawer_input:checked ~ .drawer_open span::after {
-  top: 0;
-  transform: rotate(-45deg);
-  background: #fff;
-}
-  
-/* メニューのデザイン*/
-.nav_content {
-    font-family: "Zen Kaku Gothic New", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0%;
-  left: 100%; /* メニューを画面の外に飛ばす */
-  z-index: 99;
-  background: #521B00;
-  transition: .5s;
-  text-align: center;
-  padding-top: 20px;
-  font-size: 20px;
-  
-}
-
-/* メニュー黒ポチを消す */
-.nav_list li {
-  margin-bottom: 20px;
-}
-
-.nav_item a {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* アイコンがクリックされたらメニューを表示 */
-#drawer_input:checked ~ .nav_content {
-  left: 0;/* メニューを画面に入れる */
-  
-}
-
-a.btn_lan {
-	display: block;
-	text-align: center;
-	text-decoration: none;
-    white-space: nowrap;
-	width: 97px;
-  margin-left: 20px;
-  margin-top: 3px;
-  margin-bottom: 16px;
-	padding: 0.1em;
-	font-weight: bold;
-	border: 1px solid #521B00;
-	color: #521B00;
-	border-radius: 100vh;
-	transition: 0.5s;
-  font-family: "Zen Kaku Gothic New", sans-serif;
-    font-weight: 500;
-    font-size: 11px;
-    padding-right: 20px;
-}
-a.btn_lan:hover {
-	color: #521B00;
-	background: #fff;
-}
-
-.title h1 {
-    font-family: "Noto Sans Linear A", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    color: #521B00;
-    font-style: normal;
-    font-size: 30px;
-    z-index: 101;
-    margin-left: 20px;
-    -webkit-text-stroke: 1.5px #521B00;
-    margin-top: 12px;
-    margin-bottom: -18px;
-}
-.title span {
-    font-family: "Noto Sans Linear A", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    color: #521B00;
-    font-style: normal;
-    font-size: 8px;
-    z-index: 101;
-    margin-left: 55px;
-
-    -webkit-text-stroke: 0px #521B00;
-}
-
-
-.kaisou {
-    margin-top: 48px;
-    background-color: #F7F7F7;
-    padding: 1em;
-    color: #222426;
-}
-
-.gazo {
-  
-  }
-
-.gazo h1 {
-  position: absolute;
-  font-family: "WDXL Lubrifont JP N", sans-serif;
-  text-shadow: rgba(0, 0, 0, 1) 1px 0 10px;
-  color: white;
-  top: 100px;
-  left: 20px;
-  margin:0;
-  padding:0;
-  text-align: left;
- white-space: nowrap;
- line-height: 1;
-  /*文字の装飾は省略*/
-  font-weight: 530;
-  font-size: 40px;
-
-  }
-
-.gazo span {
-    font-size: 23px;
-    font-weight: 530;
-    right: 20px;
-}
-
-
-.gazo img {
-  width: 100%;
-  position: relative;
-  z-index: 0;
-  
-  }
-
-
-  h1 {
-    font-size: 20px;
-    font-weight: 700;
-}
-
-
-
-
-@keyframes infinity-scroll-left {
-from {
-  transform: translateX(0);
-}
-  to {
-  transform: translateX(-100%);
-}
-}
-.scroll-infinity__wrap {
-  display: flex;
-  overflow: hidden;
-}
-.scroll-infinity__list {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  
-  
-}
-.scroll-infinity__list--left {
-  animation: infinity-scroll-left 55s infinite linear 0.5s both;
-}
-.scroll-infinity__item {
-  width: calc(100vw / 2);
-}
-.scroll-infinity__item>img {
-  width: 100%;
-}
-
-.scroll-infinity__wrap {
-  position: relative;
-  top: -10px;
-}
-
-.explain {
-
-}
-
-.explain2 {
-  position: relative;
-  top: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  background: #ffffff;
-  border-radius: 5px;
-}
-.haikei {
-  background-color: #dddddd;
-  position: relative;
-  top: -10px;
-  height: 78px;
-}
-.explain h5 {
-    font-size: 16px;
-    color: #521B00;
-    margin-left: 25px;
-    font-family: "WDXL Lubrifont JP N", sans-serif;
-    margin-right: 1em;
-    margin-top: -1em;
-    line-height: 2;
-    font-weight: 500;
-}
-.explain h3 {
-    font-size: 20px;
-    color: #521B00;
-    font-family: "Boto Sans Japanese", sans-serif;
-    margin-right: 20%;
-    margin-top: -1.5em;
-    text-align: right;
-    line-height: 2;
-    font-weight: 600;
-}
-.explain2 span {
-  font-family: "WDXL Lubrifont JP N", sans-serif;
-  font-size: 28px;
-}
-
-.explain h4 {
-    font-size: 23px;
-    color: #222426;
-    margin-left: 1em;
-    margin-top: 2em;
-    font-weight: 400;
-    font-family: "Noto Sans Linear A", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal
-}
-.explain h6 {
-    font-size: 16px;
-    color: #222426;
-    margin-left: 1.2em;
-    margin-right: 1em;
-    margin-top: -1em;
-    line-height: 2;
-    font-weight: 500;
-}
-
-.tool section {
-    margin-top: 0px;
-}
-
-.bg img {
-    padding-left: 2em;
-    padding-top: 0.3em;
-    width: 80px;
-
-}
-
-.bg h3 {
-    font-weight: 430;
-    font-size: 23px;
-    color: #222426;
-    line-height: 0.8;
-    padding-left: 25%;
-}
-.bg span {
-    font-size: 12px;
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-
-}
-.tool ul {
-    list-style: disc;
-    padding-left: 3em;
-    margin-top: -10px 10px;
-}
-
-
-
-.title h5 {
-    font-size: 30px;
-    font-weight: 250;
-}
-.kaisou h6 {
-    color: #828487;
-    font-weight: 500;
-    font-size: 11px;
-}
-
-.home {
-  text-decoration: none;
-  color: #222426;
-  font-weight: 500;
-}
-
-.gaiyou {
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.gaiyou h4 {
-  font-family: "WDXL Lubrifont JP N", sans-serif;
-  font-size: 28px;
-  position: absolute;
-  top: 10px;
-}
-
-.gaiyou h6 {
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  padding-left: 0px;
-  position: absolute;
-  top: 160px;
-  
-}
-
-.nihon h4 {
-  font-family: "WDXL Lubrifont JP N", sans-serif;
-  font-size: 28px;
-  position: absolute;
-  top: 700px;
-}
-}
-}
+  <ul class="nav_list">
+    <h4>
+  <li class="nav_item"><a href="https://www.expo2025.or.jp/">ホーム</a></li>
+            <li class="nav_item"><a href="https://www.expo2025.or.jp/officialblog/">公式ブログ</a></li>
+            <li class="nav_item"><a href="https://www.expo2025.or.jp/officialsns/">公式SNS</a></li>
+            <li class="nav_item"><a href="https://www.expovisitors.expo2025.or.jp/shops?_gl=1*16npmd0*_gcl_au*MTk3MTIzNTgyLjE3NTAyNDY1OTc.">Goods & Shops</a></li>
+            <li class="nav_item"><a href="https://www.expovisitors.expo2025.or.jp/gourmets?_gl=1*16npmd0*_gcl_au*MTk3MTIzNTgyLjE3NTAyNDY1OTc.">グルメ</a></li>
+            <li class="nav_item"><a href="https://www.expo2025.or.jp/expo-map-index/map/">会場マップ</a></li>
+            <li class="nav_item"><a href="https://www.expo2025.or.jp/universalinfo/">ユニバーサル情報</a></li>
+            <li class="nav_item"><a href="https://www.expo2025.or.jp/expo-map-index/access/">アクセス</a></li>
+            <li class="nav_item"><a href="https://tktwaitingroom.expo2025.or.jp/?c=expo2025&e=ticket0001&ver=v3-javascript-3.7.8&cver=121&man=ticket-top&l=ticket-0001&t=https%3A%2F%2Fticket.expo2025.or.jp%2Fmyticket%2F%3F_gl%3D1%2apbitlx%2a_gcl_au%2aMTk3MTIzNTgyLjE3NTAyNDY1OTc.&kupver=cloudfront-1.2.10">マイチケットログイン</a></li>
+            <li class="nav_item"><a href="https://faq.expo2025.or.jp/hc/ja?_gl=1*pbitlx*_gcl_au*MTk3MTIzNTgyLjE3NTAyNDY1OTc.">お問い合わせ</a></li>
+  </h4></ul><br><br><br><br><br><br><br>
+  <h6>総合基礎実技2025　第三課題「嘘をつくる」 ９グループ
+  <br>　
+  </h6>
+</div>
+
+
+
+</div>
+</div>
+<!-- contents end -->
+</body>
+
+</html>
 
 
 
