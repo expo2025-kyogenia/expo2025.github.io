@@ -9,74 +9,305 @@
 
 
 /* PC表示（横幅：1025px以上）の時 */
+
 @media screen and (min-width: 768px) {
- 
-.box {
-  background-image: linear-gradient(0deg, transparent calc(100% - 1px), #C8DCEF calc(100% - 1px)),
-                    linear-gradient(90deg, transparent calc(100% - 1px), #C8DCEF calc(100% - 1px));
-  background-size: 16px 16px;
-  background-repeat: repeat;
-  background-position: center center;
-  padding: 20px;
+ .box {
+  
 }
 
 body {
     font-family: "Zen Kaku Gothic New", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 320;
+    font-weight: 400;
     color: #1649A7;
     font-style: normal;
     font-size: 15px;
     line-height: 1.75;
-    background-color: rgba(239, 241, 241, 1);
+    background-color: rgb(255, 255, 255);
 
 }
 
-.gazo .img {
-    width: 80vh;
-    height: auto;
+/* CSSコード */
+.header {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  position: fixed;
+  margin: auto -60px;
+  margin-top: -50px;
+  top: 50px;
 }
 
-h1 {
+.header {
+    background-color: white;
+    width: 120vw;
+   
+}
+
+/* ここから下がハンバーガーメニューに関するCSS */
+  
+
+/* チェックボックスを非表示にする */
+.drawer_hidden {
+  display: none;
+}
+
+/* ハンバーガーアイコンの設置スペース */
+.drawer_open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 25px;
+  top: 25px;
+  z-index: 100;/* 重なり順を一番上にする */
+  cursor: pointer;
+}
+
+
+/* ハンバーガーメニューのアイコン */
+.drawer_open span,
+.drawer_open span:before,
+.drawer_open span:after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 25px;
+  background: #333;
+  transition: 0.5s;
+  position: absolute;
+}
+
+/* 三本線の一番上の棒の位置調整 */
+.drawer_open span:before {
+  bottom: 8px;
+}
+
+/* 三本線の一番下の棒の位置調整 */
+.drawer_open span:after {
+  top: 8px;
+}
+
+/* アイコンがクリックされたら真ん中の線を透明にする */
+#drawer_input:checked ~ .drawer_open span {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+#drawer_input:checked ~ .drawer_open span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+  background: #fff;
+}
+
+#drawer_input:checked ~ .drawer_open span::after {
+  top: 0;
+  transform: rotate(-45deg);
+  background: #fff;
+}
+  
+/* メニューのデザイン*/
+.nav_content {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  bottom: 100%;
+  left: 0%; /* メニューを画面の外に飛ばす */
+  z-index: 99;
+  background: linear-gradient(rgba(0,104,183,1), rgba(97,229,211,1));
+  transition: .5s;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+  
+}
+
+/* メニュー黒ポチを消す */
+.nav_list li {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.nav_item a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  
+}
+
+.nav_explain {
+  color: #fff;
+  font-weight: 400;
+  font-size: 8px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+/* アイコンがクリックされたらメニューを表示 */
+#drawer_input:checked ~ .nav_content {
+  bottom: 0;/* メニューを画面に入れる */
+  
+}
+
+
+
+.title {
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+
+.kaisou {
+    margin-top: 48px;
+    background-color: #F7F7F7;
+    padding: 1em;
+    color: #222426;
+}
+
+.gazo {
+  position: relative;
+  z-index: 0;
+  }
+
+.gazo h1 {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  text-shadow: rgba(0,0,0,0.5) 1px 0 10px;
+  margin:0;
+  padding:0;
+  text-align: center;
+ white-space: nowrap;
+ line-height: 1;
+  /*文字の装飾は省略*/
+  font-weight: 530;
+  font-size: 25px;
+  }
+
+.gazo span {
+    font-size: 16px;
+    font-weight: 530;
+}
+
+
+.gazo img {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  }
+
+
+  h1 {
     font-size: 20px;
     font-weight: 700;
 }
+
+a.btn_03 {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+    white-space: nowrap;
+	width: 135px;
+	margin-left: auto;
+    margin-right: 20px;
+	padding: 0.7em;
+	font-weight: bold;
+	border: 1px solid #0068B7;
+	color: #0068B7;
+	border-radius: 100vh;
+	transition: 0.5s;
+    font-weight: 500;
+    font-size: 14px;
+    padding-right: 20px;
+	background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20class%3D%22feather%20feather-external-link%22%3E%3Cpath%20d%3D%22M18%2013v6a2%202%200%200%201-2%202H5a2%202%200%200%201-2-2V8a2%202%200%200%201%202-2h6%22%3E%3C%2Fpath%3E%3Cpolyline%20points%3D%2215%203%2021%203%2021%209%22%3E%3C%2Fpolyline%3E%3Cline%20x1%3D%2210%22%20y1%3D%2214%22%20x2%3D%2221%22%20y2%3D%223%22%3E%3C%2Fline%3E%3C%2Fsvg%3E');
+	background-size: 16px;
+	background-repeat: no-repeat;
+	background-position: 100px;
+    
+}
+a.btn_03:hover {
+	color: #fff;
+	background: #0068B7;
+}
+
+.explain h4 {
+    font-size: 23px;
+    color: #222426;
+    margin-left: 1em;
+    margin-top: 1em;
+    font-weight: 500;
+    
+}
+.explain h6 {
+    font-size: 16px;
+    color: #222426;
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+    margin-top: -0.9em;
+    line-height: 2;
+    font-weight: 500;
+}
+
 
 .tool section {
     margin-top: 0px;
 }
 
-.tool h3 {
-    display: inline-block;
-    font-weight: 550;
-    font-size: 25px;
-    margin-bottom: -20px;
+.bg img {
+    padding-left: 2em;
+    padding-top: 0.3em;
+    width: 80px;
+
 }
 
-.tool h5 {
-    font-size: 12px;
-    font-weight: 250;
-    margin-top: -30px;
+.bg h3 {
+    font-weight: 430;
+    font-size: 23px;
+    color: #222426;
+    line-height: 0.8;
+    padding-left: 25%;
 }
-  
+.bg span {
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
+}
 .tool ul {
     list-style: disc;
     padding-left: 3em;
     margin-top: -10px 10px;
 }
 
-.title h1 {
-    font-size: 50px;
-    font-weight: 500;
-    margin-bottom: -50px;
-    font-family: "Noto Sans JP", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-}
+
+
 .title h5 {
     font-size: 30px;
     font-weight: 250;
 }
+.kaisou h6 {
+    color: #828487;
+    font-weight: 500;
+    font-size: 11px;
+}
+
+.home {
+  text-decoration: none;
+  color: #222426;
+  font-weight: 500;
+}
+
 
 .process h3 {
     margin-top: 30px;
@@ -100,6 +331,26 @@ ol > li::before {
     font-weight: bold;
 }
 
+.netabare  {
+  background: #0068B7;
+  
+}
+
+.nav_list h4 {
+  font-size: 15px;
+  line-height: 0.75;
+  margin-left: 25px;
+}
+
+.netabare h6 {
+  font-size: 10px;
+  color: #dbdde0;
+  text-align: right;
+  margin-right: 20px;
+  
+  font-weight: 500;
+  line-height: 1.5;
+}
  }
 
 
@@ -112,8 +363,9 @@ ol > li::before {
 
 
 
+
  /* スマートフォン表示（横幅：767px以下）の時 */
- @media screen and (max-width: 767px) {
+ @media screen  {
     .box {
   
 }
